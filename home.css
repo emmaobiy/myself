@@ -1,6 +1,6 @@
 .frame {
     display: flex; /*讓容器內的項目水平排列*/
-    min-height: 100vh/*區塊的最小高度設定為100%瀏覽器視窗的可見高度;vh(Viewport Height)瀏覽器視窗的可見高度*/
+    min-height: 100vh;/*區塊的最小高度設定為100%瀏覽器視窗的可見高度;vh(Viewport Height)瀏覽器視窗的可見高度*/
     }
 
 .left {
@@ -26,7 +26,7 @@
     padding: 10px;/*區塊內的字與內邊距離*/
         
     display: flex;
-    justify-content:center ; /*讓容器內的項目置中*/
+    justify-content:center ; /*置中*/
     align-items: center; /* 垂直居中 */
 }
 
@@ -45,18 +45,33 @@
     background-size: contain; /* 確保圖片完全顯示，不會變形或裁切。 */
     width: 30px; /* 圖片寬 */
     height: 30px;
-    margin-right: 5px; /* 可选，用于添加图像与文本之间的间距 */
+    margin-right: 5px; /* 圖片與文字間距離 */
     
 }
         /* 行內區塊級元素（inline-block）結合了行內元素和區塊級元素的特點，具有以下特點：
             它們不會導致換行，會按照它們的大小在同一行內水平排列。
             與區塊級元素不同的是，它們的寬度和高度可以設定為固定值。例如：<img>, <input>, <button> 等。*/
 
+.issue:hover {
+    color: orange; /* 懸停時改變字元顏色 */
+}
+
+
+.clicked {
+    color: brown; /* 點擊後變色,要維持顏色需用javascript */
+}
+
 
 .answer{
     background-color:rgba(206, 189, 189, 0.503);
     padding: 20px;/*區塊內的字與內邊距離*/
 }
+
+/* 隱藏 checkbox */
+.toggle-answer {
+    display: none;
+}
+
 
 .frame-min {
         display: flex; /*讓容器內的項目水平排列*/
@@ -101,4 +116,3 @@
 }
 
 
-}
